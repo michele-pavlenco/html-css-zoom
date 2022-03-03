@@ -3,23 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+    background-color: black;
+}
 .debug {
   border: 1px solid black;
 }
 .vew-type {
-  /* display: flex;
-    justify-content: flex-end;
-    flex-direction: row ;  */
+
   position: fixed;
   top: 0;
-  right: 0;
   height: 60px;
+  color: white;
+  background-color: black;
+  z-index: 2;
+  width: 100%;
+  text-align: right;
+  
+  
 }
 main {
-  height: 150vh;
+  height: 100%;
   margin-top: 60px;
   margin-bottom: 60px;
+  background-color: black;
 }
 .main-flex-box {
   display: flex;
@@ -44,4 +51,68 @@ main {
 }
 .container {
   position: relative;
+}
+.container span{
+    display: none;
+}
+.container:hover span{
+    display: block;
+    top: 0;
+    right: 0;
+    position: absolute ;
+    padding: 2px 5px;
+    background-color: rgba(42, 92, 255, 0.753);
+    border-radius: 5px;
+    color: white;
+}
+nav{
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(0deg 0% 13%);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .left-nav{
+display: flex;
+flex-direction: row;
+gap: 20px;
+text-align: center;
+margin-left:10px ;
+color: white;
+}
+nav .center-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+color:white ;
+}
+.fa-angle-up{
+    font-size: 10px;
+}
+.right-nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsl(0deg 0% 29%);
+
+color: red;
+padding: 21px 30px;
+}
+.fa-share-from-square{
+    color:hsl(97deg 94% 33%) ;
+}
+span:hover{
+    cursor: pointer;
+    color: darkorange;
+}
+.fa-angle-up:hover{
+    color: dodgerblue;
+    cursor: pointer;
 }
