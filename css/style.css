@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid black;
+}
+.vew-type{
+     /* display: flex;
+    justify-content: flex-end;
+    flex-direction: row ;  */
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 60px;
+}
+main{
+    width: 80%;
+    height: 150vh;
+    margin-top: 60px;
+   
+}
+.main-flex-box{
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 5px;
+    align-items: center;
+}
+.main-flex-box img{
+    width: 175px;
+    height: 100px;
+     ;
+
+}
+
+
